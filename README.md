@@ -4,7 +4,7 @@
 - Store website assets—including HTML, CSS, JavaScript, and images—in an Amazon S3 bucket.
 - Enable S3 Block Public Access to prevent direct public access to bucket contents.
 - Protect data with S3 versioning and server-side encryption.
-- Enforce an S3 bucket policy that:- Denies all non-HTTPS requests.
+- Enforce an S3 bucket policy that: Denies all non-HTTPS requests and permits object retrieval only from the authorized CloudFront distribution.
 - Permits object retrieval only from the authorized CloudFront distribution.
 - Configure CloudFront with Origin Access Control (OAC) to ensure the S3 origin is accessible only through CloudFront.
 - Require HTTPS for all viewer requests to protect data in transit.
